@@ -4,14 +4,137 @@
 
 body {
   margin: 0;
-  background: #947706;
-  color: #222;
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-family: Georgia, serif;
+  background-color: lavenderblush;
 }
 
-#all-contents {
-  max-width: 1500px;
-  min-height: 100vh;
-  margin: 0 auto;
-  padding: 32px 40px;
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 48px;
+  padding: 16px 24px;
+  background: white;
+  border: 1px solid hotpink;
+  border-radius: 12px;
+}
+
+nav {
+  background-color: plum;
+  padding: 18px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  margin-right: 25px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+main {
+  display: flex;
+  margin: 35px;
+  padding: 25px;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.sidebar {
+  width: 35%;
+  padding: 15px;
+}
+
+.sidebar img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.content {
+  width: 65%;
+  padding: 25px;
+  color: darkslategray;
+}
+
+h1 {
+  color: mediumvioletred;
+  font-size: 40px;
+  margin-top: 5px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+#interests {
+  margin-top: 25px;
+  padding: 20px;
+  background-color: mistyrose;
+  border-radius: 20px;
+}
+
+h2 {
+  color: hotpink;
+  font-size: 27px;
+}
+
+li {
+  margin-bottom: 12px;
+  font-size: 18px;
+}
+/* Portfolio styles */
+.content h1 {
+  color: white;
+}
+
+#portfolio {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+#portfolio li {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+#portfolio a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  color: lavenderblush;
+  padding: 16px 20px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  background: white;
+  border: 1px solid pink;
+  border-radius: 12px;
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+#portfolio a:hover {
+  background: white;
+  color: lavenderblush;
+  transform: translateX(4px);
+}
+
+#portfolio a::after {
+  content: "->";
+  font-size: 0.85rem;
+  opacity: 0.4;
+  transition: opacity 0.25s ease;
+  white-space: nowrap;
+}
+
+#portfolio a:hover::after {
+  opacity: 1;
 }
