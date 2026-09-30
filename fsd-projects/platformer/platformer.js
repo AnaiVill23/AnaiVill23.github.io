@@ -27,21 +27,33 @@ $(function () {
     //////////////////////////////////
 
     // TODO 1 - Enable the Grid
-    // toggleGrid();
+   toggleGrid();
+
+    // TODO 2 - Create Platform    const newLocal = createPlatform();
+  createPlatform(40, 680, 160, 20, "lightpink");
+  createPlatform(250, 590, 110, 20, "plum");
+  createPlatform(410, 490, 100, 20, "palevioletred");
+  createPlatform(570, 590, 90, 20, "lavender");
+  createPlatform(720, 480, 100, 20, "peachpuff");
+  createPlatform(880, 370, 90, 20, "hotpink");
+  createPlatform(1030, 470, 100, 20, "thistle");
+  createPlatform(1180, 350, 90, 20, "violet");;    
 
 
-    // TODO 2 - Create Platforms
-
-
-
-
-    // TODO 3 - Create Collectables
-
+  // 
+  createCollectable("diamond", 90, 640, 0, 0);
+  createCollectable("grace", 285, 550, 0, 0);
+  createCollectable("steve", 455, 450, 0, 0);
+  createCollectable("kennedi", 760, 440, 0, 0);
+  createCollectable("max", 920, 330, 0, 0);
+  createCollectable("database", 1350, 210, 0, 0);
 
 
     
-    // TODO 4 - Create Cannons
-
+    // TODO # 4 - Create Cannons
+  createCannon("left", 150, 900);
+  createCannon("top", 750, 1100);
+  createCannon("top", 1250, 850); 
 
     
     

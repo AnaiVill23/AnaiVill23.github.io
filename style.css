@@ -14,19 +14,47 @@ nav {
   align-items: center;
   margin-bottom: 48px;
   padding: 16px 24px;
-  background: white;
   border: 1px solid hotpink;
   border-radius: 12px;
-}
-
-nav {
   background-color: plum;
   padding: 18px;
   text-align: center;
 }
+nav h1 {
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #000;
+}
 
-nav a {
+#nav-ul {
+  list-style: none;
+  display: flex;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-li a {
   color: white;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 6px 14px;
+  border-radius: 8px;
+  transition:
+    background 0.25s ease,
+    color 0.25s ease;
+}
+
+.nav-li a:hover {
+  background: plum;
+  color: powderblue;
+}
+nav a {
+  color: hotpink;
   margin-right: 25px;
   text-decoration: none;
   font-size: 18px;
@@ -70,7 +98,7 @@ p {
 #interests {
   margin-top: 25px;
   padding: 20px;
-  background-color: mistyrose;
+  background-color: beige;
   border-radius: 20px;
 }
 
@@ -85,7 +113,7 @@ li {
 }
 /* Portfolio styles */
 .content h1 {
-  color: white;
+  color: hotpink;
 }
 
 #portfolio {
@@ -108,12 +136,12 @@ li {
   justify-content: space-between;
   align-items: center;
   text-decoration: none;
-  color: lavenderblush;
+  color: rgb(255, 118, 164);
   padding: 16px 20px;
   font-size: 1.1rem;
   font-weight: 500;
-  background: white;
-  border: 1px solid pink;
+  background: peachpuff;
+  border: 1px solid hotpink;
   border-radius: 12px;
   transition:
     background 0.25s ease,
@@ -123,7 +151,7 @@ li {
 
 #portfolio a:hover {
   background: white;
-  color: lavenderblush;
+  color: rgb(255, 101, 152);
   transform: translateX(4px);
 }
 
