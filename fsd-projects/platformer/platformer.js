@@ -27,9 +27,9 @@ $(function () {
     //////////////////////////////////
 
     // TODO 1 - Enable the Grid
-   toggleGrid();
+   //toggleGrid();
 
-    // TODO 2 - Create Platform    const newLocal = createPlatform();
+    // TODO 2 - Create Platform    
   createPlatform(40, 680, 160, 20, "lightpink");
   createPlatform(250, 590, 110, 20, "plum");
   createPlatform(410, 490, 100, 20, "palevioletred");
