@@ -38,7 +38,9 @@ $(function () {
   createPlatform(880, 370, 90, 20, "hotpink");
   createPlatform(1030, 470, 100, 20, "thistle");
   createPlatform(1180, 350, 90, 20, "violet");;    
-
+  createPlatform(330, 390, 80, 20, "mistyrose");
+  createPlatform(650, 300, 85, 20, "orchid");
+  createPlatform(970, 250, 80, 20, "plum");
 
   // 
   createCollectable("diamond", 90, 640, 0, 0);
@@ -54,7 +56,13 @@ $(function () {
   createCannon("left", 150, 900);
   createCannon("top", 750, 1100);
   createCannon("top", 1250, 850); 
-
+  createCannon("left", 150, 900);
+  createCannon("right", 300, 1200);
+  createCannon("bottom", 500, 800);
+  createCannon("top", 750, 1100);
+  createCannon("right", 600, 950);
+  createCannon("bottom", 1050, 1300);
+  createCannon("top", 1250, 850);
     
     
     //////////////////////////////////
