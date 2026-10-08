@@ -1,6 +1,6 @@
 body {
   margin: 0px;
-  background-color: powderblue;
+  background-color: mistyrose;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -12,7 +12,9 @@ canvas {
   margin: 20px;
   border-radius: 15px;
   border: 5px solid hotpink (118, 0, 233, 0.375);
-  background-image: url(https://www.google.com/imgres?imgurl=https://images.fanart.tv/bigpreview/strawberry-shortcake-moonlight-mysteries-5b002cc0714f6.jpg&imgrefurl=https://fanart.tv/movie/331434/strawberry-shortcake-moonlight-mysteries/&h=225&w=400&tbnid=v4h7wqbROOlbcM&tbnh=168&tbnw=300&osm=1&hcb=1&source=lens-native&docid=0xO_Ron3axCPsM);
+  background-image: url(https://live.staticflickr.com/4126/4988939396_69e9e5706f_b.jpg);
+  background-repeat : no-repeat;
+  background-size: cover;
 }
 
 img { 

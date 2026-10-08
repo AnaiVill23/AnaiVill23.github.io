@@ -14,7 +14,7 @@ $(function () {
       firstTimeSetup = false;
       //start game
       setInterval(main, 1000 / frameRate);
-    }
+    
 
     // Create walls - do not delete or modify this code
     createPlatform(-50, -50, canvas.width + 100, 50); // top wall
@@ -30,41 +30,44 @@ $(function () {
    //toggleGrid();
 
     // TODO 2 - Create Platform    
-  createPlatform(40, 680, 160, 20, "lightpink");
-  createPlatform(250, 590, 110, 20, "plum");
-  createPlatform(410, 490, 100, 20, "palevioletred");
-  createPlatform(570, 590, 90, 20, "lavender");
-  createPlatform(720, 480, 100, 20, "peachpuff");
-  createPlatform(880, 370, 90, 20, "hotpink");
-  createPlatform(1030, 470, 100, 20, "thistle");
-  createPlatform(1180, 350, 90, 20, "violet");;    
-  createPlatform(330, 390, 80, 20, "mistyrose");
-  createPlatform(650, 300, 85, 20, "orchid");
-  createPlatform(970, 250, 80, 20, "plum");
+  createPlatform(30, 680, 180, 20, "MistyRose");
+createPlatform(270, 560, 100, 20, "AliceBlue");
+createPlatform(120, 430, 90, 20, "orange");
+createPlatform(350, 300, 130, 20, "PaleTurquoise");
+createPlatform(560, 430, 100, 20, "palevioletred");
+createPlatform(730, 250, 90, 20, "lightpink");
+createPlatform(900, 360, 120, 20, "Honeydew");
+createPlatform(1050, 560, 100, 20, "peachpuff");
+createPlatform(1180, 400, 90, 20, "violet");
+createPlatform(1300, 220, 90, 20, "hotpink");
+createPlatform(1080, 180, 80, 20, "lavender");
+
 
   // 
   createCollectable("diamond", 90, 640, 0, 0);
-  createCollectable("grace", 285, 550, 0, 0);
-  createCollectable("steve", 455, 450, 0, 0);
-  createCollectable("kennedi", 760, 440, 0, 0);
-  createCollectable("max", 920, 330, 0, 0);
-  createCollectable("database", 1350, 210, 0, 0);
+createCollectable("grace", 315, 520, 0, 0);
+createCollectable("steve", 165, 390, 0, 0);
+createCollectable("kennedi", 410, 260, 0, 0);
+createCollectable("max", 605, 390, 0, 0);
+createCollectable("database", 1340, 180, 0, 0);
+
 
 
     
-    // TODO # 4 - Create Cannons
-  createCannon("left", 150, 900);
-  createCannon("top", 1250, 850); 
-  createCannon("left", 150, 900);
-  createCannon("right", 300, 1200);
-  createCannon("bottom", 1050, 1300);
-  createCannon("top", 1250, 850);
+    // TODO # 4 - Create Cannon 
+  createCannon("left", 300, 1800);
+createCannon("top", 750, 2300);
+createCannon("right", 1050, 1500);
+
+
+
+}
     
     
     //////////////////////////////////
     // ONLY CHANGE ABOVE THIS POINT //
     //////////////////////////////////
-  }
+  } 
+   registerSetup(setup);
 
-  registerSetup(setup);
 });
