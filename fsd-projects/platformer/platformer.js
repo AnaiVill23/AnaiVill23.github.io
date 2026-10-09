@@ -31,18 +31,18 @@ $(function () {
 
     // TODO 2 - Create Platform    
   
-  createPlatform(40, 680, 160, 20, "lightpink");
-  createPlatform(250, 590, 110, 20, "plum");
-  createPlatform(410, 490, 100, 20, "palevioletred");
-  createPlatform(570, 590, 100, 20, "plum");
-  createPlatform(720, 480, 100, 20, "peachpuff");
-  createPlatform(880, 370, 90, 20, "hotpink", 870, 970, 2, 0);
-  createPlatform(1030, 470, 100, 20, "thistle", );
-  createPlatform(1180, 350, 90, 20, "red", 1120, 1250, 2, 0);
-  createPlatform(1310, 250, 85, 20, "green");
-  createPlatform(650, 300, 85, 20, "blue");
-  createPlatform(500, 300, 85, 20, "brown", 300, 300, 0, 300, 400, 1)
-  createPlatform(350, 200, 85, 20, "pink", 150, 200, 0, 100, 200, 1)
+  createPlatform(40, 680, 160, 20, "white");
+  createPlatform(250, 590, 110, 20, "mistyrose");
+  createPlatform(410, 490, 100, 20, "white");
+  createPlatform(570, 590, 100, 20, "mistyrose");
+  createPlatform(720, 480, 100, 20, "white");
+  createPlatform(880, 370, 90, 20, "white", 870, 970, 2, 0);
+  createPlatform(1030, 470, 100, 20, "white", );
+  createPlatform(1180, 350, 90, 20, "mistyrose", 1120, 1250, 2, 0);
+  createPlatform(1310, 250, 85, 20, "white");
+  createPlatform(650, 300, 85, 20, "mistyrose");
+  createPlatform(500, 300, 85, 20, "white", 300, 300, 0, 300, 400, 1)
+  createPlatform(350, 200, 85, 20, "mistyrose", 150, 200, 0, 100, 200, 1)
  
 
 // TODO 3 - Create Collectable

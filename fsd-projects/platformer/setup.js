@@ -96,11 +96,10 @@ let halleImage;
 let animationDetails = {};
 
 var collectableList = {
-  database: { image: "https://storage.needpix.com/rsynced_images/star-304661_1280.png" },
-  diamond: { image: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7481a148-0e7f-4c86-973e-2db73276a0c6/d79z6yb-0adc3fd2-b6da-461c-88f0-4497278714d2.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi83NDgxYTE0OC0wZTdmLTRjODYtOTczZS0yZGI3MzI3NmEwYzYvZDc5ejZ5Yi0wYWRjM2ZkMi1iNmRhLTQ2MWMtODhmMC00NDk3Mjc4NzE0ZDIucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.XXYwMKJMXQfRWEMCF_WJAkv6pDEX9Azu_dx6qJkUV6c" },
-
-  grace: { image: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7481a148-0e7f-4c86-973e-2db73276a0c6/d79z6n9-79235ee7-8d11-4853-92e2-c11b3b34c258.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi83NDgxYTE0OC0wZTdmLTRjODYtOTczZS0yZGI3MzI3NmEwYzYvZDc5ejZuOS03OTIzNWVlNy04ZDExLTQ4NTMtOTJlMi1jMTFiM2IzNGMyNTgucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.WGT8TJaNcUk4d0-D0En2SBUtncKyooLp4mFR-K_ywYU" },
-  kennedi: { image: "https://assets.streamlinehq.com/image/private/w_512,h_512,ar_1/f_auto/v1/icons/3/ringed-planet-4mcc8kz3kioz7sg8c0zp1e.png/ringed-planet-qj2a4fdtfjlp7myb7miopb.png?_a=DATAiZAAZAA0" },
-  max: { image: "https://freepngimg.com/thumb/universe/29224-9-jupiter-transparent.png" },
-  steve: { image: "https://static.vecteezy.com/system/resources/previews/056/768/308/non_2x/blue-planet-earth-with-land-and-oceans-on-transparent-background-png.png" },
+  database: { image: "https://freepngimg.com/thumb/pumpkin/11-2-pumpkin-transparent.png" },
+  diamond: { image: "https://freepngimg.com/thumb/pumpkin/11-2-pumpkin-transparent.png" },
+  grace: { image: "https://freepngimg.com/thumb/pumpkin/11-2-pumpkin-transparent.png" },
+  kennedi: { image: "https://freepngimg.com/thumb/pumpkin/11-2-pumpkin-transparent.png" },
+  max: { image: "https://freepngimg.com/thumb/pumpkin/11-2-pumpkin-transparent.png" },
+  steve: { image: "https://freepngimg.com/thumb/pumpkin/11-2-pumpkin-transparent.png" },
 };
