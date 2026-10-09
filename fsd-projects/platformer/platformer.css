@@ -1,6 +1,6 @@
 body {
   margin: 0px;
-  background-color: mistyrose;
+  background-color: black;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -11,8 +11,8 @@ canvas {
   background-color: white;
   margin: 20px;
   border-radius: 15px;
-  border: 5px solid hotpink (118, 0, 233, 0.375);
-  background-image: url(https://live.staticflickr.com/4126/4988939396_69e9e5706f_b.jpg);
+  border: 5px solid blue (118, 0, 233, 0.375);
+  background-image: url(https://i.makeagif.com/media/8-02-2016/xGQOmg.gif);
   background-repeat : no-repeat;
   background-size: cover;
 }
