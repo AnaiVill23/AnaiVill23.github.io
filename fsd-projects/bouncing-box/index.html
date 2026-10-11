@@ -5,10 +5,11 @@
     <title>Bouncing Box</title>
     <script src="jquery.min.js"></script>
     <style>
-      .box {
+     .box {
         width: 70px;
         height: 70px;
-        background-color: teal;
+        background-color:mistyrose
+        size: cover;
         font-size: 300%;
         text-align: center;
         user-select: none;
@@ -17,10 +18,15 @@
         top: 100px;
         /* Change me! */
         left: 0px;
-      }
+     }
+     
 
       .board {
         height: 100vh;
+        background-image: url("https://i.pinimg.com/originals/2f/10/ce/2f10ce69b96c0611989308b0abc68e70.gif");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
       }
     </style>
     <!-- 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
@@ -29,14 +35,42 @@
   <body class="board">
     <!-- HTML for the box -->
     <div class="box">?</div>
-
     <script>
       (function () {
         "use strict";
         /* global jQuery */
 
-        //////////////////////////////////////////////////////////////////
+       //////////////////////////////////////////////////////////////////
+        /////////////////// SETUP DO NOT DELETE //////////////////////////
+        ////////////////////////////////////////////////////////////////// 
 
+var box = jQuery(".box"); // reference to the HTML .box element
+        var board = jQuery(".board"); // reference to the HTML .board element
+        var boardWidth = board.width(); // the maximum X-Coordinate of the screen
+        var boardHeight = jQuery(window).height();
+
+        // update the boardWidth variable when the window is resized
+        jQuery(window).on("resize", function () {
+          boardWidth = board.width();
+        });
+
+        // Every 50 milliseconds, call the update Function (see below)
+        var interval = setInterval(update, 50);
+
+        // Every time the box is clicked, call the handleBoxClick Function (see below)
+        box.on("click", handleBoxClick);
+        board.on("click",endGame)
+
+        // moves the Box to a new position on the screen along the X-Axis
+        function moveBoxTo(newPositionX, newPositionY) {
+          box.css("left", newPositionX);
+          box.css("top", newPositionY);
+        }
+
+        // changes the text displayed on the Box
+        function changeBoxText(newText) {
+          box.text(newText);
+        }
 
 
         
@@ -45,9 +79,13 @@
         //////////////////////////////////////////////////////////////////
 
         // TODO 2 - Variable declarations
-  
-        
- 
+       var positionX = 0
+var points = 0
+var speedX = 10
+var positionY = 0
+var speedY = 8
+var randNum = Math.random() * 100;
+var missClicks = 20
       
 
         /**
@@ -55,10 +93,25 @@
          * Each time it is called, it should move the Box to a new location.
          * If the box drifts off the screen, turn it around!
          */
-        
-
+       function update() { 
+          moveBoxTo(positionX , positionY);
+          positionX += speedX
+          positionY += speedY
+       if (positionX + 70 > boardWidth) {
+       speedX *= -1
+}
+      if (positionX < 0) {
+        speedX *= -1
+      }
+        if (positionY + 70 > boardHeight) {
+       speedY *= -1
+}
+ if (positionY < 0) {
+        speedY *= -1
+      }
           
-        
+        }
+          
 
         /**
          * This Function will be called each time the box is clicked.
@@ -67,15 +120,27 @@
          * - increase the speed
          * - move the box to the left side of the screen.
          */
-      
+       function handleBoxClick() {
+          positionX = 0
+          changeBoxText(points)
+          points += 1
+          speedX = (1.5 * points + 2) + 10
+           speedY = (2 * points + 2) + 5
 
 
 
 
         }
+        function endGame() {
+          board.click = missClicks -= 1
+          if (missClicks === 0){
+           clearInterval(interval);
+           alert("YOU LOSE. Refresh to play again")
+}
+        }
+         
 
 
-        
       })();
     </script>
   </body>
