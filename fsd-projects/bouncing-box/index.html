@@ -6,23 +6,27 @@
     <script src="jquery.min.js"></script>
     <style>
      .box {
-        width: 70px;
-        height: 70px;
-        background-color:mistyrose;
-        font-size: 300%;
-        text-align: center;
-        user-select: none;
-        display: block;
-        position: absolute;
-        top: 100px;
-        /* Change me! */
-        left: 0px;
-     }
+     width: 70px;
+     height: 70px;
+    background-image: url("https://freepngimg.com/thumb/bugs/150644-ladybug-insect-cute-free-transparent-image-hq.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    font-size: 0;
+    user-select: none;
+    display: block;
+    position: absolute;
+    top: 100px;
+    left: 0px;
+   }
+
      
 
       .board {
         height: 100vh;
-        background-image: url("https://img.magnific.com/premium-vector/abstract-pink-star-pattern-background_1199668-2727.jpg?semt=ais_hybrid&w=740&q=80");
+        background-image: url("https://i.pinimg.com/originals/cd/d2/2e/cdd22e5ab69bd3bc6c8865ba24bc541d.gif");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -98,14 +102,14 @@ var missClicks = 20
           positionY += speedY
        if (positionX + 70 > boardWidth) {
        speedX *= -1
-}
+      }
       if (positionX < 0) {
         speedX *= -1
       }
         if (positionY + 70 > boardHeight) {
        speedY *= -1
-}
- if (positionY < 0) {
+      }
+       if (positionY < 0) {
         speedY *= -1
       }
           
